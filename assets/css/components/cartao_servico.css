@@ -1,0 +1,78 @@
+.cartao {
+    position: absolute;
+    width: 328px;
+    height: 319px;
+    left: 40%;
+    top: 30%;
+    /* Valor provisório */
+
+}
+
+.cartao__area-1 {
+
+    position: absolute;
+    width: 328px;
+    height: 148px;
+    left: 0px;
+    top: 0px;
+    background-size: cover;
+    /* background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF; */
+    background-image: url(https://th.bing.com/th/id/OIP.pj-PmJJj6ocgSeTKrcOA2wHaE8?pid=ImgDet&rs=1);
+    border-radius: 7px 7px 0px 0px;
+
+}
+
+/* .fa-save::before {
+    content: "\f0c7";
+} */
+
+
+.cartao__area-1 i {
+    /* box-sizing: border-box;
+
+    position: absolute;
+    width: 19.71px;
+    height: 15.43px;
+    left: 998.14px;
+    top: 1001.71px;
+
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center; */
+
+    /* border: 1px solid black; */
+    /* border-radius: 100%; */
+    /* padding: 1rem; */
+    /* position: absolute;
+    z-index: 1;
+    left: 10%;
+    height: 100px;
+    width: 100px;
+
+    color: black; */
+    /* color: rgba(133, 133, 133, 0.3); */
+
+    /* border: 30px solid black; */
+}
+
+.cartao__area-2 {}
+
+.cartao__area-2-col-1 {}
+
+.cartao__area-2-col-2 {}
+
+.cartao__area-3 {}
+
+.cartao__area-3-col-1 {}
+
+.cartao__area-3-col-2 {}
+
+.cartao__area-4 {
+    background-color: #BEBCBC;
+
+}
