@@ -21,12 +21,12 @@
 
     /******* BORDAS *******/
     --arredondamento: 7px;
-    --sombra: 0.2rem 0.2rem 0.5rem #00000060;
+    --sombra: .2rem .2rem .5rem #00000060;
 
 
     /******* ESPAÇAMENTO *******/
     --espacamento-geral: 15vmin 3vmin;
-    --gap: 0.2em;
+    --gap: .2em;
 
 
     /******* TAMANHOS DE FONTES *******/
@@ -43,12 +43,21 @@ img {
     width: 100%;
 }
 
+button, fieldset, input {
+    border: none;
+}
+
+input:focus:not([type=radio]) {
+    outline: 2px solid var(--cor-principal);
+}
+
 .wrapper {
     padding: var(--espacamento-geral);
 }
 
 .botao {
     background-color: var(--cor-principal);
+    cursor: pointer;
 }
 
 

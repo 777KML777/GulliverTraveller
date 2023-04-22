@@ -1,6 +1,6 @@
 .cabecalho {
-    background: rgba(0, 0, 0, 0.4) 
-                url(../../images/hospedagem/fundo_cabecalho.jpg) no-repeat;
+    background: rgba(0, 0, 0, .31) 
+                url(../../images/hospedagem/fundo_cabecalho.jpg) no-repeat bottom;
     background-blend-mode: darken;
     background-size: cover;
     display: flex;
@@ -56,6 +56,7 @@
 .cabecalho__hero-frase {
     color: var(--branco);
     font-size: var(--fonte-grande);
+    margin-left: .5em;
     margin-top: -1em;
     width: 19ch;
 }
@@ -64,7 +65,7 @@
 /******* BREAKPOINT DESKTOP *******/
 @media screen and (min-width: 1024px) {
     .cabecalho {
-        background-position: bottom;
+        min-height: 60vmin;
         padding: 3vmin 20vmax;
     }
     
