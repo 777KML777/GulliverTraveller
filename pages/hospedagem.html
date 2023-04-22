@@ -2,29 +2,670 @@
 <html lang="pt-br">
 
 <head>
+
+    <!-- Chamada para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://kit.fontawesome.com/3bf3cead5c.js" crossorigin="anonymous"></script> -->
+
     <!--Configuração padrão-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/dot_icon.webp" type="image/icon type">
-
+    <!-- <link rel="icon" href="img/dot_icon.webp" type="image/icon type"> -->
     <title>Gulliver Traveller</title>
 
     <!--Instalação-->
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/pages/hospedagem.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
-        integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
 </head>
+
 <body>
-    <div class="cartao">
-        <div class="cartao__area-1">
-            <!-- <i class="fa-thin fa-heart"></i> -->
-            <!-- <i class="fa-thin fa-heart">te</i> -->
-            <i class="fa-solid fa-bed">Hos</i>
-            <!-- <i class="fa-brands fa-save"></i> -->
+    <section class="secao-hoteis-titulo">
+        <i class="fa-solid fa-fire-flame-curved fa-2xl"></i>
+        <h2>HOTÉIS EM ALTA</h2>
+        <p>a partir de São Paulo</p>
+    </section>
+
+    <section class="secao-hoteis-cartoes">
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
         </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+        <div class="cartao">
+            <div class="cartao__imagem">
+                <i class="fa-regular fa-heart fa-2xl"></i>
+                <div class="cartao__imagem-carrossel">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                    <i class="fa-regular fa-circle fa-2xs"></i>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>Orange Hotel</h2>
+                    <p>200km de distância</p>
+                    <p>5 - 31 de abril</p>
+                </div>
+                <div class="cartao__descricao-resumo">
+                    <div class="cartao__descricao-avaliacao">
+                        <p>4,88</p>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="">301 comentários</a>
+                </div>
+            </div>
+
+            <div class="cartao__descricao">
+                <div class="cartao__descricao-resumo">
+                    <h2>R$ 575</h2>
+                    <p>apenas</p>
+                    <p>por 1 diária</p>
+                </div>
+                <div class="cartao__descricao-avaliacao">
+                    <div class="cartao__descricao-botao">
+                        <i class="fa-solid fa-plus fa-2xs"></i>
+                        <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cartao__link">
+                <a>meuhotelseguro.com.br</a>
+                <i class="fa-solid fa-square-up-right fa-lg cartao__link-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        
     </div>
+
 </body>
+
 </html>

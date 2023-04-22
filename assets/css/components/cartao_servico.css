@@ -1,78 +1,90 @@
 .cartao {
-    position: absolute;
+    position: relative;
     width: 328px;
     height: 319px;
-    left: 40%;
-    top: 30%;
-    /* Valor provisório */
-
+    border: solid #BEBCBC 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-.cartao__area-1 {
+/** area 1 cartao__imagem **/
 
-    position: absolute;
-    width: 328px;
-    height: 148px;
+.cartao__imagem {
+    width: 100%;
+    height: 48%;
     left: 0px;
     top: 0px;
     background-size: cover;
-    /* background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF; */
     background-image: url(https://th.bing.com/th/id/OIP.pj-PmJJj6ocgSeTKrcOA2wHaE8?pid=ImgDet&rs=1);
     border-radius: 7px 7px 0px 0px;
-
 }
 
-/* .fa-save::before {
-    content: "\f0c7";
-} */
-
-
-.cartao__area-1 i {
-    /* box-sizing: border-box;
-
+.cartao__imagem > i {
+    top: 15%;
+    left: 85%;
     position: absolute;
-    width: 19.71px;
-    height: 15.43px;
-    left: 998.14px;
-    top: 1001.71px;
-
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-align: center; */
-
-    /* border: 1px solid black; */
-    /* border-radius: 100%; */
-    /* padding: 1rem; */
-    /* position: absolute;
-    z-index: 1;
-    left: 10%;
-    height: 100px;
-    width: 100px;
-
-    color: black; */
-    /* color: rgba(133, 133, 133, 0.3); */
-
-    /* border: 30px solid black; */
+    color: white
 }
 
-.cartao__area-2 {}
+.cartao__imagem-carrossel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 95%;    
+}
 
-.cartao__area-2-col-1 {}
+.cartao__imagem-carrossel > i {
+    color: white;
+    padding-right: 5px;
+}
 
-.cartao__area-2-col-2 {}
+/** area 2 cartao__descricao **/
 
-.cartao__area-3 {}
+.cartao__descricao {
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+}
 
-.cartao__area-3-col-1 {}
+.cartao__descricao-resumo {
+    display: flex;
+    flex-direction: column;
+}
 
-.cartao__area-3-col-2 {}
+.cartao__descricao-avaliacao {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
 
-.cartao__area-4 {
+.cartao__descricao-botao {
+    background-color: #FAB005;
+    height: 30px;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** area 3 cartao__link **/
+
+.cartao__link {
+    height: 7%;
+    width: 100%;
+    color: white;
     background-color: #BEBCBC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.cartao__link-icon {
+    position: relative;
+    margin-left: 5px;
+    color: white;
 }

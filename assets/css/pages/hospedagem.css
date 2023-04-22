@@ -1,1 +1,36 @@
 @import url(../components/cartao_servico.css);
+
+.secao-hoteis-titulo{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    
+    margin-left: 10%;    
+}
+
+.secao-hoteis-cartoes {
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    height: 1370px;
+    overflow: hidden;
+
+    /* margin: auto; */
+    /* margin: 50px; */
+    /* padding: 50px; */
+    /* width: 50%; */
+    /* align-content: space-around; */
+    /* background-color: black; */
+    /* padding-top: 20px; Porque o padding top não funciona aqui */
+
+}
+
+/** BREAKPOINT DESKTOP **/
+
+@media screen and (min-width: 1024px) {
+    .secao-hoteis-cartoes {
+        width: 1200px;
+        margin: auto;
+    }
+}
