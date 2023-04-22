@@ -62,10 +62,17 @@
 }
 
 
+/******* BREAKPOINT TABLET *******/
+@media screen and (min-width: 690px) {
+    .cabecalho {
+        min-height: 57vmin;
+    }
+}
+
+
 /******* BREAKPOINT DESKTOP *******/
 @media screen and (min-width: 1024px) {
     .cabecalho {
-        min-height: 60vmin;
         padding: 3vmin 20vmax;
     }
     

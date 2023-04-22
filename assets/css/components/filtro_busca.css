@@ -106,6 +106,13 @@ input:not(.filtro-busca__form-tipo) {
     width: 100%;
 }
 
+/******* BREAKPOINT TABLET *******/
+@media screen and (min-width: 690px) {
+    .filtro-busca {
+        min-height: 85vmin;
+    }
+}
+
 
 /******* BREAKPOINT DESKTOP *******/
 @media screen and (min-width: 1024px) {
