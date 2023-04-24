@@ -3,6 +3,7 @@
 @import url(../components/cabecalho.css);
 @import url(../components/cartao_servico.css);
 @import url(../components/cartao_blog.css);
+@import url(../components/rodape.css);
 
  .secao-hoteis-cartoes {
     display: flex;
