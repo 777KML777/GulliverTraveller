@@ -34,7 +34,7 @@ article {
     font-size: var(--fonte-grande);
     font-weight: 900;
     position: absolute;
-    right: 40px;
+    
 }
 
 .cartao-blog__conteudo {
