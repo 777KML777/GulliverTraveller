@@ -9,8 +9,8 @@
 }
 
 /******* AREA 1 CARTAO-SERVICO *******/
-.cartao-servico__imagem {
-    background-image: url(https://th.bing.com/th/id/OIP.pj-PmJJj6ocgSeTKrcOA2wHaE8?pid=ImgDet&rs=1);
+.cartao-servico__imagem {    
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.LMZJmC1JEKpb3JhOoPz-EgAAAA&pid=Api&P=0);
     background-position: center;
     background-size: cover;
     border-radius: 7px 7px 0px 0px;
@@ -18,7 +18,7 @@
     width: 100%;
 }
 
-.cartao-servico>i {
+.cartao-servico > i {
     color: rgba(133, 133, 133, 0.3);
     font-size: var(--fonte-grande);
     position: absolute;
@@ -35,7 +35,7 @@
     top: 95%;
 }
 
-.cartao-servico__imagem-carrossel>i {
+.cartao-servico__imagem-carrossel > i {
     color: rgba(133, 133, 133, 0.5);
     padding-right: 5px;
 }
@@ -46,13 +46,17 @@
 
 /******* AREA 2 CARTAO-DESCRICAO *******/
 .cartao-servico__descricao {
-    align-items: center;
+    align-items: start;
     border-left: solid var(--cinza-claro) 1px;
     border-right: solid var(--cinza-claro) 1px;
     display: flex;
     font-size: var(--fonte-pequena);
     justify-content: space-between;
     padding: 1em 1em;
+}
+
+.cartao-servico__preco {
+    font-size: var(--fonte-media);
 }
 
 .cartao-servico__descricao-resumo {
@@ -62,13 +66,13 @@
 
 .cartao-servico__descricao-resumo-color {
     color: var(--cinza-medio);
+    font-size: var(--fonte-pequena);
 }
 
 .cartao-servico__descricao-icones {
-    align-items: center;
     display: flex;
     flex-direction: row-reverse;
-    font-size: var(--fonte-media);
+    font-size: var(--fonte-pequena);
 }
 
 .cartao-servico__descricao-icones>i {

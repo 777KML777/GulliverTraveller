@@ -5,10 +5,21 @@
 @import url(../components/cartao_blog.css);
 @import url(../components/rodape.css);
 
-section {
+
+.secao-hoteis-titulo {
+    font-size: var(--fonte-grande);
+    text-align: center;
+} 
+
+.secao-hoteis__texto {
+    font-size: var(--fonte-pequena);
+}
+
+.secao-cartao {
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
+
 }
 
  .secao-hoteis-cartoes {
@@ -19,8 +30,14 @@ section {
 }
 
  .secao__hoteis-anterior-proximo {
-    position: relative;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    font-size: var(--fonte-pequena);
+    justify-content: center;
+    position: relative;
+    gap: 2rem;
+}
+
+.secao_hoteis-span{
+    color:  var(--cor-principal);
 }

@@ -9,6 +9,7 @@
     justify-content: center;
     padding-top: 1rem;
     width: 100%;
+    margin-top: 15vmin;
 }
 
 .rodape__conteudo {
@@ -18,7 +19,7 @@
     justify-content: space-between;
     padding: 0 2rem;
     width: 100%;
-    
+
 }
 
 .rodape__conteudo-logo {
@@ -62,7 +63,7 @@ li a {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    padding-top: 2rem;    
+    padding-top: 2rem;
 }
 
 
@@ -77,6 +78,7 @@ li a {
     .rodape {
         height: 50vh;
     }
+
     .rodape__conteudo-logo {
         font-size: calc(var(--fonte-grande) * 1.2);
     }
@@ -84,8 +86,9 @@ li a {
 
 
 /******* BREAKPOINT DESKTOP *******/
-/* @media screen and (min-width: 1024px) {
-    .rodape__topo {
-        grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: 1050px) {
+    .rodape__conteudo {
+        padding: 0 8rem;
+
     }
-} */
+}

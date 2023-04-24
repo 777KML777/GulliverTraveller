@@ -10,16 +10,19 @@ article {
     width: 100%;
 }
 
-.cartao-blog__icones {
+.cartao-blog__icones-container {
     align-items: center;
     background-color: var(--cinza-claro);
     border-bottom-left-radius: var(--arredondamento);
     border-top-left-radius: var(--arredondamento);
     display: flex;
     justify-content: center;
-    padding: 1em;
-    position: relative;
+    padding: 2em 1em;
     min-width: 35%;
+}
+
+.cartao-blog__icones {
+    position: relative;
 }
 
 .cartao-blog__icones-item:first-child {
@@ -30,11 +33,10 @@ article {
 }
 
 .cartao-blog__icones-item:last-child {
-    bottom: 5px;
+    bottom: -.5em;
     font-size: var(--fonte-grande);
     font-weight: 900;
     position: absolute;
-    
 }
 
 .cartao-blog__conteudo {
@@ -56,7 +58,7 @@ article {
 
 /******* BREAKPOINT DESKTOP *******/
 @media (min-width: 1024px) {
-    .cartao-blog__icones {
+    .cartao-blog__icones-container {
         min-width: 20%;
     }
 

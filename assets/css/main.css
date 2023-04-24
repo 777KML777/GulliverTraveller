@@ -60,10 +60,6 @@ h3 {
     font-size: var(--fonte-media);
 }
 
-section {
-    padding: var(--espacamento-geral);
-}
-
 .wrapper {
     padding: var(--espacamento-geral);
 }
@@ -87,7 +83,7 @@ section {
 /******* BREAKPOINT DESKTOP *******/
 @media screen and (min-width: 1024px) {
     :root {
-        --espacamento-geral: 15vmin 10vmax;
+        --espacamento-geral: 10vmin 10vmax;
         --fonte-grande: 4vmin;   
         --fonte-media: 3vmin;
         --fonte-pequena: 2vmin;
