@@ -4,15 +4,14 @@
 @import url(../components/cartao_servico.css);
 @import url(../components/cartao_blog.css);
 
-.secao-hoteis-cartoes {
+ .secao-hoteis-cartoes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     
 }
 
  .secao__hoteis-anterior-proximo {
-    margin: var(--espacamento-geral);
     position: relative;
     display: flex;
     justify-content: center;
