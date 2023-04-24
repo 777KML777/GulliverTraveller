@@ -4,7 +4,7 @@
     border-radius: var(--arredondamento);
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin: 2em auto;
     width: 90%;
 }
 

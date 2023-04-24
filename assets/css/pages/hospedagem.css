@@ -5,11 +5,17 @@
 @import url(../components/cartao_blog.css);
 @import url(../components/rodape.css);
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
  .secao-hoteis-cartoes {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between; 
-    
+    overflow: hidden;   
 }
 
  .secao__hoteis-anterior-proximo {
