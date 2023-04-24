@@ -1,0 +1,139 @@
+.filtro-busca {
+    background: linear-gradient(var(--cinza-medio), var(--branco));
+    min-height: 110vmin;
+    padding-inline: 5vmin;
+    position: relative;
+}
+
+.filtro-busca__titulo {
+    background-color: var(--branco);
+    border-bottom: 2px solid var(--cor-principal);
+    border-top-left-radius: var(--arredondamento);
+    border-top-right-radius: var(--arredondamento);
+    font-size: var(--fonte-pequena);
+    font-weight: 700;
+    margin-left: 3vmin;
+    padding: .7em 1em;
+    position: absolute;
+    top: -3em;
+    width: fit-content;
+}
+
+.filtro-busca__titulo i {
+    margin-right: var(--gap);
+}
+
+.filtro-busca__form {
+    background-color: var(--branco);
+    border-radius: var(--arredondamento);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fonte-pequena);
+    gap: 1rem;
+    padding: 5% 5% 9vmin 5%;
+}
+
+label:not(.filtro-busca__form-tipo label) {
+    display: flex;
+    flex-direction: column;
+}
+
+input:not(.filtro-busca__form-tipo) {
+    border: 1px solid var(--cinza-escuro);
+    font-size: calc(var(--fonte-pequena) / 1.1);
+    padding: .35em;
+}
+
+.filtro-busca__form-search input, 
+.filtro-busca__form-qtde input {
+    padding-left: 2.5em;
+}
+
+.filtro-busca__form-search {
+    position: relative;
+}
+
+.filtro-busca__form-search::after {
+    color: var(--cor-principal);
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: var(--fonte-pequena);
+    left: .7em;
+    position: absolute;
+    top: 2.1em;
+}
+
+.filtro-busca__form-tipo {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    justify-content: space-between;
+    padding: .35em;
+    text-align: center;
+}
+
+.filtro-busca__form-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filtro-busca__form-data > * {
+    width: 45%;
+}
+
+.filtro-busca__form-qtde {
+    position: relative;
+}
+
+.filtro-busca__form-qtde::after {
+    color: var(--cor-principal);
+    content: "\f0c0";
+    font-family: FontAwesome;
+    font-size: var(--fonte-pequena);
+    left: .7em;
+    position: absolute;
+    top: 2em;
+}
+
+.filtro-busca__form-botao {
+    font-size: var(--fonte-pequena);
+    margin: auto;
+    margin-top: .7em;
+    height: fit-content;
+    padding-block: .35em;
+    width: 100%;
+}
+
+/******* BREAKPOINT TABLET *******/
+@media screen and (min-width: 690px) {
+    .filtro-busca {
+        min-height: 85vmin;
+    }
+}
+
+
+/******* BREAKPOINT DESKTOP *******/
+@media screen and (min-width: 1024px) {
+    .filtro-busca {
+        min-height: 50vmin;
+        padding-inline: 15vmax;
+    }
+
+    .filtro-busca__titulo {
+        margin-left: 10vmin;
+        padding-inline: 5vmin; 
+    }
+
+    .filtro-busca__form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3% 7%;
+        justify-content: space-between;
+    }
+
+    .filtro-busca__form > * {
+        width: 45%;
+    }
+}

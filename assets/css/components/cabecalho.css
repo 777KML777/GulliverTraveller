@@ -1,0 +1,108 @@
+.cabecalho {
+    background: rgba(0, 0, 0, .31) 
+                url(../../images/hospedagem/fundo_cabecalho.jpg) no-repeat bottom;
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 73vmin;
+    padding: 3vmin 5vmin;
+}
+
+.cabecalho__menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho__menu-login i, 
+.cabecalho__menu-nav-item i {
+    margin-right: var(--gap);
+}
+
+.cabecalho__menu-login {
+    color: var(--branco);
+    font-size: var(--fonte-pequena);
+}
+
+.cabecalho__menu-nav {
+    margin-left: -1.5em;
+}
+
+.cabecalho__menu-nav-item {
+    color: var(--branco);
+}
+
+.cabecalho__menu-nav-item:not(
+.cabecalho__menu-nav-item--titulo) {
+   display: none;
+}
+
+.cabecalho__menu-nav-item--titulo {
+    font-size: var(--fonte-grande);
+}
+
+.cabecalho__menu-hamburguer {
+    color: var(--branco);
+    font-size: var(--fonte-media);
+}
+
+.cabecalho__hero {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+}
+
+.cabecalho__hero-frase {
+    color: var(--branco);
+    font-size: var(--fonte-grande);
+    margin-left: .5em;
+    margin-top: -1em;
+    width: 19ch;
+}
+
+
+/******* BREAKPOINT TABLET *******/
+@media screen and (min-width: 690px) {
+    .cabecalho {
+        min-height: 57vmin;
+    }
+}
+
+
+/******* BREAKPOINT DESKTOP *******/
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        padding: 3vmin 20vmax;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+        position: relative;
+    }
+
+    .cabecalho__menu-login {
+        left: -25%;
+        position: absolute;
+    }
+
+    .cabecalho__menu-nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cabecalho__menu-nav-item:not(
+    .cabecalho__menu-nav-item--titulo) {
+        display: initial;
+        font-size: var(--fonte-pequena);
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+}

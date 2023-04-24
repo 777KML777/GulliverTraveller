@@ -1,69 +1,71 @@
-.cartao {
+.cartao-servico {
     position: relative;
-    width: 328px;
+    width: 90%;
     height: 319px;
-    border: solid #BEBCBC 2px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    margin-top: 20px;
+    margin: 5vmin auto;
+    
 }
 
-/** area 1 cartao__imagem **/
+/** area 1 cartao-servico__imagem **/
 
-.cartao__imagem {
-    width: 100%;
-    height: 48%;
-    left: 0px;
-    top: 0px;
+.cartao-servico__imagem {
+    max-width: 100%;
+    height: 75%;
     background-size: cover;
     background-image: url(https://th.bing.com/th/id/OIP.pj-PmJJj6ocgSeTKrcOA2wHaE8?pid=ImgDet&rs=1);
     border-radius: 7px 7px 0px 0px;
+    background-position: 50%;
 }
 
-.cartao__imagem > i {
-    top: 15%;
+.cartao-servico__imagem > i {
+    top: 9%;
     left: 85%;
     position: absolute;
-    color: white
+    color: var(--branco);
 }
 
-.cartao__imagem-carrossel {
+.cartao-servico__imagem-carrossel {
     position: relative;
     display: flex;
     justify-content: center;
     top: 95%;    
 }
 
-.cartao__imagem-carrossel > i {
+.cartao-servico__imagem-carrossel > i {
     color: white;
     padding-right: 5px;
 }
 
-/** area 2 cartao__descricao **/
+/** area 2 cartao-servico__descricao **/
 
-.cartao__descricao {
-    height: 25%;
+.cartao-servico__descricao {
+    border-left: solid var(--cinza-claro) 1px;
+    border-right: solid var(--cinza-claro) 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
-.cartao__descricao-resumo {
+.cartao-servico__descricao-resumo {
     display: flex;
     flex-direction: column;
 }
 
-.cartao__descricao-avaliacao {
+.cartao-servico__descricao-avaliacao {
     display: flex;
-    flex-direction: row-reverse;
-    
+    flex-direction: row-reverse;  
 }
 
-.cartao__descricao-botao {
-    background-color: #FAB005;
+.cartao-servico__descricao p {
+    font-size: calc(var(--fonte-pequena) / 1.2);
+}
+
+.cartao-servico__descricao-botao {
+    background-color: var(--cor-principal);
     height: 30px;
     width: 95px;
     display: flex;
@@ -71,20 +73,47 @@
     align-items: center;
 }
 
-/** area 3 cartao__link **/
+/** area 3 cartao-servico__link **/
 
-.cartao__link {
-    height: 7%;
+.cartao-servico__link {
+    height: 1%;
     width: 100%;
-    color: white;
     background-color: #BEBCBC;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
-.cartao__link-icon {
+.cartao-servico__link a {
+    color: var(--branco);
+}
+
+.cartao-servico__link-icon {
     position: relative;
     margin-left: 5px;
-    color: white;
+    color: var(--branco);
+}
+
+@media (min-width: 690px) {
+    .cartao-servico {
+        
+        width: 48%;
+        height: 35vh;
+    }
+}
+
+@media (min-width: 1080px) {
+    .cartao-servico {
+        
+        height: 45vh;
+        width: 28%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .cartao-servico {
+        width: 28%;
+        height: 500px;
+    }
 }

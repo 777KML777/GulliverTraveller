@@ -1,7 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(../css/components/botao_fixo.css);
 
 * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    /******* CORES *******/
+    --branco: #ffffff;
+    --cor-principal: #fab005;
+    --cinza-claro: #bebcbc;
+    --cinza-medio: #a4a2a1;
+    --cinza-escuro: #767676;
+    --preto: #000000;
+
+
+    /******* BORDAS *******/
+    --arredondamento: 7px;
+    --sombra: .2rem .2rem .5rem #00000060;
+
+
+    /******* ESPAÇAMENTO *******/
+    --espacamento-geral: 15vmin 3vmin;
+    --gap: .2em;
+
+
+    /******* TAMANHOS DE FONTES *******/
+    --fonte-grande: 5.5vmin;
+    --fonte-media: 4.5vmin;
+    --fonte-pequena: 3.5vmin;
+}
+
+a {
+    color: initial;
+}
+
+img {
+    width: 100%;
+}
+
+button, fieldset, input {
+    border: none;
+}
+
+input:focus:not([type=radio]) {
+    outline: 2px solid var(--cor-principal);
+}
+
+h2 {
+    font-size: var(--fonte-grande)
+}
+
+h3 {
+    font-size: var(--fonte-media);
+}
+
+section {
+    padding: var(--espacamento-geral);
+}
+
+.wrapper {
+    padding: var(--espacamento-geral);
+}
+
+.botao {
+    background-color: var(--cor-principal);
+    cursor: pointer;
+}
+
+
+/******* BREAKPOINT TABLET *******/
+@media screen and (min-width: 690px) {
+    :root {
+        --fonte-grande: 4.5vmin;
+        --fonte-media: 3.5vmin;
+        --fonte-pequena: 2.5vmin;
+    }
+}
+
+
+/******* BREAKPOINT DESKTOP *******/
+@media screen and (min-width: 1024px) {
+    :root {
+        --espacamento-geral: 15vmin 10vmax;
+        --fonte-grande: 4vmin;   
+        --fonte-media: 3vmin;
+        --fonte-pequena: 2vmin;
+    }
 }

@@ -1,0 +1,30 @@
+.botao-fixo {
+    bottom: 5vmin;
+    right: 5vmin;
+    position: fixed;
+}
+
+.botao-fixo i {
+    background-color: var(--cor-principal);
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px var(--cinza-claro) ;
+    color: var(--branco);
+    display: grid;
+    font-size: var(--fonte-grande);
+    height: 2em;
+    place-items: center;
+    width: 2em;
+}
+
+
+/******* BREAKPOINT DESKTOP *******/
+@media screen and (min-width: 1024px) {
+    .botao-fixo {
+        bottom: 1vmax;
+        right: 5vmax;
+    }
+
+    .botao-fixo i {
+        font-size: var(--fonte-media);
+    }
+}
