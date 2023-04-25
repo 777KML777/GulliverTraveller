@@ -1,5 +1,4 @@
 .cartao-servico {
-    border: 1px solid var(--cinza-claro);
     border-radius: var(--arredondamento);
     display: flex;
     flex-direction: column;
@@ -64,6 +63,10 @@
     flex-direction: column;
 }
 
+.cartao-servico__descricao-resumo a {
+    text-decoration: underline;
+}
+
 .cartao-servico__descricao-resumo-color {
     color: var(--cinza-medio);
     font-size: var(--fonte-pequena);
@@ -71,11 +74,11 @@
 
 .cartao-servico__descricao-icones {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: end;
     font-size: var(--fonte-pequena);
 }
 
-.cartao-servico__descricao-icones>i {
+.cartao-servico__descricao-icones > i {
     align-items: center;
     color: var(--cor-principal);
     display: flex;
@@ -84,16 +87,19 @@
 
 .cartao-servico__descricao-botao {
     align-items: center;
+    align-self: center;
     display: flex;
     justify-content: center;
     padding-block: .7em;
-    width: 20%;
+    width: 35%;
 }
 
 /******* AREA 3 CARTAO-SERVICO__LINK *******/
 .cartao-servico__link {
     align-items: center;
     background-color: var(--cinza-claro);
+    border-bottom-left-radius: var(--arredondamento) var(--arredondamento);
+    border-bottom-right-radius: var(--arredondamento) var(--arredondamento);
     display: flex;
     justify-content: center;
     width: 100%;
