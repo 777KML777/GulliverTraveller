@@ -1,27 +1,4 @@
-.secao-hoteis-titulo {
-    font-size: var(--fonte-grande);
-    text-align: center;
-} 
-
-.secao-hoteis__texto {
-    font-size: var(--fonte-pequena);
-}
-
-.secao-cartao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
- .secao-hoteis-cartoes {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    overflow: hidden;   
-}
-
- .secao__hoteis-anterior-proximo {
+.hoteis__paginacao {
     align-items: center;
     display: flex;
     font-size: var(--fonte-pequena);
@@ -30,6 +7,6 @@
     gap: 2rem;
 }
 
-.secao_hoteis-span{
+.hoteis__paginacao-destaque {
     color:  var(--cor-principal);
 }
