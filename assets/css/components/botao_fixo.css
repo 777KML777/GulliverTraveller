@@ -2,6 +2,7 @@
     bottom: 5vmin;
     right: 5vmin;
     position: fixed;
+    z-index: 1;
 }
 
 .botao-fixo i {
