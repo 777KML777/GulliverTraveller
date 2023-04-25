@@ -1,0 +1,94 @@
+.rodape {
+    align-items: center;
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fonte-pequena);
+    height: 80vh;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 100%;
+    margin-top: 15vmin;
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+
+}
+
+.rodape__conteudo-logo {
+    align-items: center;
+    color: var(--branco);
+    display: flex;
+    font-size: var(--fonte-grande);
+    gap: 1rem;
+
+}
+
+.rodape__conteudo-redes {
+    color: var(--branco);
+    display: flex;
+    font-size: var(--fonte-pequena);
+    gap: 1rem;
+    width: 20%;
+}
+
+.rodape__conteudo-redes i {
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.rodape__conteudo-navegacao-titulo {
+    margin-bottom: .8rem;
+}
+
+.rodape__conteudo-navegacao li {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+li a {
+    color: var(--branco);
+}
+
+.rodape__base {
+    border-top: 1px solid var(--branco);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+
+/******* BREAKPOINT TABLET *******/
+@media screen and (min-width: 500px) {
+    .rodape {
+        height: 95vh;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .rodape {
+        height: 50vh;
+    }
+
+    .rodape__conteudo-logo {
+        font-size: calc(var(--fonte-grande) * 1.2);
+    }
+}
+
+
+/******* BREAKPOINT DESKTOP *******/
+@media screen and (min-width: 1050px) {
+    .rodape__conteudo {
+        padding: 0 8rem;
+
+    }
+}

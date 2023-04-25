@@ -1,0 +1,150 @@
+.cartao-servico {
+    border-radius: var(--arredondamento);
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    position: relative;
+    width: 90%;
+}
+
+/******* AREA 1 CARTAO-SERVICO *******/
+.cartao-servico__imagem {    
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.LMZJmC1JEKpb3JhOoPz-EgAAAA&pid=Api&P=0);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px 7px 0px 0px;
+    height: 20vh;
+    width: 100%;
+}
+
+.cartao-servico > i {
+    color: rgba(133, 133, 133, 0.3);
+    font-size: var(--fonte-grande);
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    -webkit-text-stroke-color: var(--branco);
+    -webkit-text-stroke-width: 1px;
+}
+
+.cartao-servico__imagem-carrossel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 95%;
+}
+
+.cartao-servico__imagem-carrossel > i {
+    color: rgba(133, 133, 133, 0.5);
+    padding-right: 5px;
+}
+
+.cartao-servico__imagem-carrossel-item:first-child {
+    color: white;
+}
+
+/******* AREA 2 CARTAO-DESCRICAO *******/
+.cartao-servico__descricao {
+    align-items: start;
+    border-left: solid var(--cinza-claro) 1px;
+    border-right: solid var(--cinza-claro) 1px;
+    display: flex;
+    font-size: var(--fonte-pequena);
+    justify-content: space-between;
+    padding: 1em 1em;
+}
+
+.cartao-servico__preco {
+    font-size: var(--fonte-media);
+}
+
+.cartao-servico__descricao-resumo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-servico__descricao-resumo a {
+    text-decoration: underline;
+}
+
+.cartao-servico__descricao-resumo-color {
+    color: var(--cinza-medio);
+    font-size: var(--fonte-pequena);
+}
+
+.cartao-servico__descricao-icones {
+    display: flex;
+    justify-content: end;
+    font-size: var(--fonte-pequena);
+}
+
+.cartao-servico__descricao-icones > i {
+    align-items: center;
+    color: var(--cor-principal);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cartao-servico__descricao-botao {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    padding-block: .7em;
+    width: 35%;
+}
+
+/******* AREA 3 CARTAO-SERVICO__LINK *******/
+.cartao-servico__link {
+    align-items: center;
+    background-color: var(--cinza-claro);
+    border-bottom-left-radius: var(--arredondamento) var(--arredondamento);
+    border-bottom-right-radius: var(--arredondamento) var(--arredondamento);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cartao-servico__link a {
+    color: var(--branco);
+}
+
+.cartao-servico__link-icon {
+    color: var(--branco);
+    margin-left: 5px;
+    position: relative;
+}
+
+/******* BREAKPOINT TABLET *******/
+@media (min-width: 500px) {
+    .cartao-servico__imagem {
+        height: 25vh;
+    }
+}
+
+@media (min-width: 900px) {
+    .cartao-servico {
+        width: 60%;
+    }
+
+    .cartao-servico__imagem {
+        height: 20vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    .cartao-servico {
+        width: 45%;
+    }
+
+    .cartao-servico__imagem {
+        height: 25vh;
+    }
+}
+
+/******* BREAKPOINT DESKTOP *******/
+@media (min-width: 1300px) {
+    .cartao-servico {
+        width: 30%;
+    }
+}

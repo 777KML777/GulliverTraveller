@@ -52,6 +52,14 @@ input:focus:not([type=radio]) {
     outline: 2px solid var(--cor-principal);
 }
 
+h2 {
+    font-size: var(--fonte-grande)
+}
+
+h3 {
+    font-size: var(--fonte-media);
+}
+
 .wrapper {
     padding: var(--espacamento-geral);
 }
@@ -75,7 +83,7 @@ input:focus:not([type=radio]) {
 /******* BREAKPOINT DESKTOP *******/
 @media screen and (min-width: 1024px) {
     :root {
-        --espacamento-geral: 15vmin 15vmax;
+        --espacamento-geral: 10vmin 10vmax;
         --fonte-grande: 4vmin;   
         --fonte-media: 3vmin;
         --fonte-pequena: 2vmin;
