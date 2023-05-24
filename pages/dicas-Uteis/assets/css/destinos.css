@@ -1,0 +1,98 @@
+@import url(../../../assets/css/main.css);
+
+:root{
+    --border-radius: 2px;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-text-color);
+}
+
+.conteudo{
+    gap: 1rem;
+}
+
+.topics{
+    overflow: auto; 
+    gap: 0.6rem;
+
+    /* Escondendo ScrollBar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.topics::-webkit-scrollbar { /* Google, Safari e Opera */
+    display: none;
+}
+
+.topics_item{
+    width: 100%;
+    font-weight: 500;
+    background: var(--item-background-color);
+    border-radius: var(--border-radius);
+}
+
+.topics .active{
+    color: var(--second-text-color);
+    background-color: var(--main-color);
+}
+
+.dicas_item{
+    border-radius: var(--border-radius);
+    font-weight: 300;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.clima{
+    background: hsla(0, 0%, 0%, 0.9) url(../images/clima.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.horas{
+    background: rgba(0, 0, 0, 0.2) url(../images/horas.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.lingua{
+    background: rgba(0, 0, 0, 0.2) url(../images/lingua.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.moeda{
+    background: rgba(0, 0, 0, 0.2) url(../images/moeda.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.volts{
+    background: rgba(0, 0, 0, 0.3) url(../images/volts.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.plug{
+    background: rgba(0, 0, 0, 0.2) url(../images/plug.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.blog{
+    gap: 1rem;
+    padding: 0;
+}
+
+.assunto{
+    gap: 0.5em;
+    line-height: 1.5rem;
+}
+
+.assunto_titulo{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}

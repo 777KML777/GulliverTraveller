@@ -1,6 +1,6 @@
 .cabecalho {
     background: rgba(0, 0, 0, .31) 
-                url(../../images/hospedagem/fundo_cabecalho.jpg) no-repeat bottom;
+                url(../images/fundo_cabecalho.jpg) no-repeat bottom;
     background-blend-mode: darken;
     background-size: cover;
     display: flex;
