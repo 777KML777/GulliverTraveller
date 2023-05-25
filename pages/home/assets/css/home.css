@@ -56,7 +56,7 @@ header{
     justify-content: center;
     align-items: center;
 
-    background: rgba(0, 0, 0, 0.5) url(../img/img13.jpg) fixed no-repeat center;
+    background: rgba(0, 0, 0, 0.5) url(../images/headerBackGround.jpg) fixed no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 
@@ -247,31 +247,31 @@ nav .logo{
 }
 
 .lugar1{
-    background: rgba(0, 0, 0, 0.3) url(../img/img4.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.3) url(../images/DestinosEmAlta_1.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .lugar2{
-    background: rgba(0, 0, 0, 0.3) url(../img/img5.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.3) url(../images/DestinosEmAlta_2.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .lugar3{
-    background: rgba(0, 0, 0, 0.3) url(../img/img6.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.3) url(../images/DestinosEmAlta_3.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .lugar4{
-    background: rgba(0, 0, 0, 0.3) url(../img/img7.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.3) url(../images/DestinosEmAlta_4.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .lugar5{
-    background: rgba(0, 0, 0, 0.3) url(../img/img8.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.3) url(../images/DestinosEmAlta_5.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -352,19 +352,19 @@ nav .logo{
     border-radius: 10% 0 0 10%;
     transform: skewY(-10deg);
     width: 30%;
-    background-image: url(img/img10.jpg);
+    background-image: url(../images/mapa.jpg);
     box-shadow: 0.2rem -0.2rem 0.5rem #000;
     transition: all 500ms ease-in-out;
     background-size: cover;
 }
 
 .mapa1:hover{
-    background-image: url(img/img13.jpg);
+    background-image: url(../images/mapa-hover_1.jpg);
 }
 
 .mapa2{
     transform: skewY(8deg);
-    background-image: url(img/img10.jpg);
+    background-image: url(../images/mapa.jpg);
     width: 35%;
     box-shadow: 0.2rem -0.2rem 0.5rem #000;
     transition: all 500ms ease-in-out;
@@ -372,13 +372,13 @@ nav .logo{
 }
 
 .mapa2:hover{
-    background-image: url(img/img7.jpg);
+    background-image: url(../images/mapa-hover_2.jpg);
 }
 
 .mapa3{
     border-radius: 0 10% 10% 0;
     transform: skewY(-10deg);
-    background-image: url(img/img10.jpg);
+    background-image: url(../images/mapa.jpg);
     width: 30%;
     box-shadow: 0.2rem -0.2rem 0.5rem #000;
     transition: all 500ms ease-in-out;
@@ -386,7 +386,7 @@ nav .logo{
 }
 
 .mapa3:hover{
-    background-image: url(img/img9.jpg);
+    background-image: url(../images/mapa-hover_3.jpg);
 }
 
 /* FIM APRESENTAÇÃO */
@@ -440,31 +440,31 @@ nav .logo{
 }
 
 .america{
-    background: rgba(0, 0, 0, 0.7) url(../img/america.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.7) url(../images/america.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .europa{
-    background: rgba(0, 0, 0, 0.7) url(../img/europa.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.7) url(../images/europa.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .asia{
-    background: rgba(0, 0, 0, 0.7) url(../img/asia.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.7) url(../images/asia.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .africa{
-    background: rgba(0, 0, 0, 0.7) url(../img/africa.png) no-repeat center;
+    background: rgba(0, 0, 0, 0.7) url(../images/africa.png) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .oceania{
-    background: rgba(0, 0, 0, 0.7) url(../img/oceania.jpg) no-repeat center;
+    background: rgba(0, 0, 0, 0.7) url(../images/oceania.jpg) no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
 }
