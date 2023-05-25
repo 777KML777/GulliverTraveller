@@ -10,11 +10,94 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/destinos.css">
+
+    <link rel="icon" href=".../../../assets/icons/dot_icon.webp" type="image/icon type">
     <title>São Paulo</title>
 </head>
 <body>
-    <main>
-        <div class="container d-flex flex-column conteudo">
+    <header class="container d-flex flex-column justify-content-between cabecalho">
+
+        <nav class="navbar">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"> <i class="fa-solid fa-plane"></i> Destino</a>
+                  <a class="dropdown-item" href="#"> <i class="fa-solid fa-home"></i> Home</a>
+                  
+                </div>
+              </div>
+              <a href="#Traveller" class="icone_maior"><i class="fa-solid fa-map icone_maior"></i> Traveller
+              <a href="#Home"><i class="fa-solid fa-user"></i> Login</a>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="./assets/images/liberdade.jpeg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-sm-block d-md-block">
+                    <h5>Bairro <span class="cabecalho_foco">Liberdade</span></h5>
+                    <p>Um alto arco torii vermelho marca a entrada da liberdade, a região japonesa da cidade.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/DOM.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-sm-block d-md-block">
+                    <h5>Restaurante <span class="cabecalho_foco">D.O.M</span></h5>
+                    <p>Detentor de duas estrelas no prestigiado Guia Michelin, o D.O.M. é um restaurante singular,sem pretensão de ser eloquente.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/jardim-botanico.jpg" alt="Quarto Slide">
+                <div class="carousel-caption d-none d-sm-block d-md-block">
+                    <h5>Jardim <span class="cabecalho_foco">Botânico</span></h5>
+                    <p>O Jardim Botânico de São Paulo é membro da maior rede global de jardins botânicos.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="./assets/images/MASP.jpg" alt="Quinto Slide">
+                <div class="carousel-caption d-none d-sm-block d-md-block">
+                    <h5>Museu <span class="cabecalho_foco">MASP</span></h5>
+                    <p>O Museu de Arte de São Paulo Assis Chateaubriand, é uma das mais importantes instituições culturais do Brasil.</p>
+                </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!-- <div class="cabecalho_descricao mb-3">
+            <h1 class="display-4">Bairro <span class="cabecalho_foco">Liberdade</span></h1>
+            <p>
+                Um alto arco torii vermelho marca a entrada da liberdade, a região japonesa da cidade.
+            </p>
+        </div> -->
+    </header>
+    <main class="container d-flex flex-column conteudo">
+        <div class="area-pesquisa">
+            <div class="input-group mb-2 mt-3 barra-de-pesquisa">
+                <div class="input-group-prepend">
+                    <span class="input-group-text caixa_texto"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <input type="text" class="form-control caixa_texto" placeholder="Pesquisar" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            </div>
+            <div class="localizacao">
+                <p> <i class="fa-solid fa-location-dot"></i> Pesquisando pontos em <span>São Paulo</span></p>
+            </div>
+        </div>
+
 
             <div class="d-flex flex-row align-items-center topics">
                 <div class="btn d-flex flex-column align-items-center justify-content-center topics_item">
@@ -38,37 +121,37 @@
             </div>
         <div class="container">
             <div class="row dicas-rapidas">
-                    <div class="col-6 col-sm-4 col-lg-2 pl-0 pr-2 pb-2 pt-0 pl-sm-0 pr-sm-2 pb-sm-2">
+                    <div class="col-6 col-sm-4 col-lg-2 pl-0 pr-2 pb-2 pt-0 pl-sm-0 pr-sm-2 pb-sm-2 py-lg-0">
                         <div class="d-flex flex-column justify-content-center align-items-center  p-4 text-center dicas_item clima">
                             <i class="fa-solid fa-cloud"></i>
                             <p class="mt-1">20,7°C</p>
                         </div>
                     </div> 
-                    <div class="col-6 col-sm-4 col-lg-2 pl-2 pr-0 pb-2 pt-0 pl-sm-2 pr-sm-2 pb-sm-2">  
+                    <div class="col-6 col-sm-4 col-lg-2 pl-2 pr-0 pb-2 pt-0 pl-sm-2 pr-sm-2 pb-sm-2 py-lg-0">  
                         <div class="d-flex flex-column justify-content-center align-items-center  p-4 text-center dicas_item horas">
                             <i class="fa-solid fa-clock"></i>
                             <p class="mt-1">GMT -3 Horas</p>
                         </div>
                     </div> 
-                    <div class="col-6 col-sm-4 col-lg-2 pl-0 pr-2 pb-2 pt-2 pl-sm-2 pr-sm-0 pb-sm-2">
+                    <div class="col-6 col-sm-4 col-lg-2 pl-0 pr-2 pb-2 pt-2 pl-sm-2 pr-sm-0 pb-sm-2 py-lg-0 pr-lg-2">
                         <div class="d-flex flex-column justify-content-center align-items-center  p-4 text-center dicas_item lingua">
                             <i class="fa-solid fa-globe"></i>
                             <p class="mt-1">Português Brasil</p>
                         </div>
                     </div> 
-                    <div class="col-6 col-sm-4 col-lg-2 pl-2 pr-0 pb-2 pt-2 pl-sm-0 pr-sm-2 pb-sm-2">
+                    <div class="col-6 col-sm-4 col-lg-2 pl-2 pr-0 pb-2 pt-2 pl-sm-0 pr-sm-2 pb-sm-2 py-lg-0 pl-lg-2">
                         <div class="d-flex flex-column justify-content-center align-items-center p-4 text-center dicas_item moeda">
                             <i class="fa-solid fa-dollar-sign"></i>
                             <p class="mt-1">Real</p>
                         </div>
                     </div> 
-                    <div class="col-6 col-sm-4 col-lg-2 pl-0 pr-2 pb-0 pt-2 pl-sm-2 pr-sm-2 pb-sm-2">
+                    <div class="col-6 col-sm-4 col-lg-2 pl-0 pr-2 pb-0 pt-2 pl-sm-2 pr-sm-2 pb-sm-2 py-lg-0">
                         <div class="d-flex flex-column justify-content-center align-items-center  p-4 text-center dicas_item volts">
                             <i class="fa-solid fa-bolt"></i>
                             <p class="mt-1">110V & 220V</p>
                         </div>
                     </div> 
-                    <div class="col-6 col-sm-4 col-lg-2 pl-2 pr-0 pb-0 pt-2 pl-sm-2 pr-sm-0 pb-sm-2">
+                    <div class="col-6 col-sm-4 col-lg-2 pl-2 pr-0 pb-0 pt-2 pl-sm-2 pr-sm-0 pb-sm-2 py-lg-0">
                         <div class="d-flex flex-column justify-content-center align-items-center  p-4 text-center dicas_item plug">
                             <i class="fa-solid fa-plug"></i>
                             <p class="mt-1">Tipo N</p>
@@ -132,7 +215,6 @@
                 </div>
             </div>
             
-          </div>
     </main>
 
     <!-- JavaScript -->
