@@ -19,6 +19,19 @@ body{
     position: relative;
     color: var(--main-text-color);
 }
+.cabecalho a:hover{
+    text-decoration: none;
+    animation-name: menu-hover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes menu-hover {
+    to {
+        color: var(--main-color);
+        }
+}
 
 .cabecalho_foco {
     color: var(--main-color);
@@ -42,6 +55,43 @@ body{
     text-shadow: 2px 2px 2px #202020;
 }
 
+.carousel-indicators .active{
+    background-color: var(--main-color);
+}
+
+.carousel-indicators li:hover{
+    animation-name: carousel-indicators;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out
+}
+
+@keyframes carousel-indicators {
+    to {
+        background-color: var(--main-color);
+        transform: scaleY(1.5);
+        }
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fab005' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        animation-name: carousel-controls;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fab005' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    animation-name: carousel-controls;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes carousel-controls {
+    to {transform: scale(1.2);
+}
+}
 
 /* Navbar */ 
 .navbar{
@@ -80,8 +130,7 @@ body{
 .form-control:focus {
     background-color: var(--item-background-color);
     color: #fff;
-    outline: none;
-    border: none;
+    border: 2px solid var(--placeholder-color);
     box-shadow: none;
 }
 
@@ -116,6 +165,10 @@ body{
     font-weight: 500;
 }
 
+.topics_item:hover{
+    background-color: var(--main-color);
+    color: var(--second-text-color);
+}
 /* Dicas Rápidas */
 
 .dicas_item{
