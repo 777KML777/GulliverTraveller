@@ -1,0 +1,74 @@
+/*** Formatação Padrão ****/
+body {
+    background-color: #1E1E1E;
+    background-color: #000;
+    color: #fff;
+}
+
+/*** Cabecalho ****/
+.cabecalho {
+    background: rgba(0, 0, 0, 0.2) url(https://s3-alpha-sig.figma.com/img/d12a/4905/31108e5fdfbd669f1a873157bce5bf32?Expires=1685318400&Signature=QwzM19RRy8o2F~UUpfTBhjkFkijthCqzHeb5ZlwzGu4s-SFlXdGsX3H~BiJPUYH1tE3nX6u6VzArg0hDkEOP~Z2mtxteD9CNB~OG6mcFn9XMDWEbH0g-DyR3PExq2f4pdf3zZlDf~qxaXbdmoV6stYnRSljUv7XlhwDBwswOzswI8ycN38Mye0uknrNYSQXsP-UTJJL0Q9kZQKovJZmH813LVeNjDmyvVO~z-Am~RGuNSGb-Z27M3mUbVTP30fhKDDJw9eYug~Iae-sO4eXYuWaiu1oHLGTlVNiyW20mk5pqU7qnAfbg4SK9dNvVAjnxvJBSHOT5m569WDUO9XPzJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4) no-repeat bottom;
+    background-blend-mode: darken;
+    background-size: cover;
+    color: #fff;
+    min-height: 40vh;
+    min-height: 40svh;
+}
+
+.cabecalho_descricao{
+    margin-bottom: 20px;
+}
+
+.cabecalho_foco {
+    color: #FAB005;
+}
+
+.icone_maior { 
+    font-size: 1.5rem;
+}
+
+/*** Navbar ***/ 
+.dropdown-item  {
+    color: #000;
+}
+
+.navbar a {
+    color: #fff
+}
+
+
+/*** Caixa de Texto ****/
+.caixa_texto {
+    background-color: #202020;
+    border: 1px solid #1E1E1E;
+}
+
+.form-control {
+    transition: none;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.form-control:focus {
+    background-color: #202020;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.barra-de-pesquisa {
+    border: 1px solid #505050;
+    
+}
+
+.localizacao i,span {
+    color:#FAB005;
+}
+
+
+
+
+
+
