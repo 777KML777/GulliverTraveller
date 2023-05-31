@@ -72,6 +72,25 @@ function quebrarTextoPorPontoTuristico() {
     return totalPontosTuristico;
 }
 
+function filtrarPorCidadeERegiao(cidade, regiao){
+    var id = 0;
+    var filtrarCidade = quebrarTextoPorCidade();
+
+    // Encontrando a cidade
+    while (id < quebrarTextoPorCidade().length) {
+        if (filtrarCidade[id].indexOf(cidade) != -1)
+            break;
+        id++;
+    }
+
+    // Encontrando a região dentro da cidade informada.
+    var regiaoEncontrada = quebrarTextoPorCidade()[id].split(regiao)[1];
+    var delimitador = regiaoEncontrada.search("#");
+    var locais = quebrarTextoPorCidade()[id].split(regiao)[1].substring(0, delimitador);
+
+    return locais;
+}
+
 // **Metódos de atribuição do INNER HTML**
 function nomeCidades() {
     var count = 0;
@@ -122,14 +141,29 @@ function qtdDeLocaisRoteiroACadaCidade() {
 
     //Criei somente para usar o montarLayout abaixo adicionando o sinal de +.
     for (let index = 0; index < qtdCidadesRoteirosA.length; index++) {
-             qtdCidadesRoteirosA[index]+= "+";
-        
+        qtdCidadesRoteirosA[index] += "+";
+
     }
+    pontosTuristicosCentroSP();
+    pontosTuristicosDowntownLA();
     return montarLayout(qtdCidadesRoteirosA);
 }
 
 
 
+function pontosTuristicosCentroSP() {
+    
+    var locaisFormatados = filtrarPorCidadeERegiao("*São+Paulo", "Região:+Centro")
+    console.log(locaisFormatados.replaceAll("+", " "));
+    return "exibicao";
+}
+
+function pontosTuristicosDowntownLA() {
+    
+    var locaisFormatados = filtrarPorCidadeERegiao("*Las+Vegas*", "Região:+Downtown")
+    console.log(locaisFormatados.replaceAll("+", " "));
+    return "exibicao";
+}
 
 // Para esses dois em questão eu recebo a região e a cidade
 // pontosTuristicosCentroSP ()
@@ -137,3 +171,9 @@ function qtdDeLocaisRoteiroACadaCidade() {
 
 
 // Passa o valor do split para um outro método.
+//Possa usar o contains, "cortar" e usar o starwiths e por aí vai. 
+//quebrarTextoPorCidade usar a lógica do quebrarTextoPorRoteiros para o index 0 já ser a cidade. 
+//criar um método chamado quebrarTextoPorLocaisTurísticos e um outro como já criei para filtrar por Região e 
+// filtrar por cidade. 
+
+//Quando for publicar a Han300 tem que publicar a shell o da onda é shell 97. 
