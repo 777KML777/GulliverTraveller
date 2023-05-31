@@ -84,8 +84,6 @@ function nomeCidades() {
         }
         count++;
     }
-
-
     return montarLayout(cidades);
 }
 
@@ -97,7 +95,6 @@ function conteudoRoteiroA() {
         roteirosA[count] = quebrarTextoPorRoteiros("A+|")[count].split("<br>")[0];
         count++;
     }
-
     return montarLayout(roteirosA);
 }
 
@@ -128,7 +125,6 @@ function qtdDeLocaisRoteiroACadaCidade() {
              qtdCidadesRoteirosA[index]+= "+";
         
     }
-
     return montarLayout(qtdCidadesRoteirosA);
 }
 
