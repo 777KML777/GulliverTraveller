@@ -27,10 +27,12 @@ function resetarValores() {
 }
 
 // **Formata o texto** - Chamada: Métodos Auxiliares
+// **Formata o texto** - Chamada: Métodos Auxiliares
 function formatarTexto(parametro) {
     return parametro.replaceAll(" ", "+");
 }
 
+// **Exibe as variávies de retorno** - Chamada: Métodos de atribuição do INNER HTML
 // **Exibe as variávies de retorno** - Chamada: Métodos de atribuição do INNER HTML
 function montarLayout(vetor) {
     var layout = "";
@@ -40,7 +42,95 @@ function montarLayout(vetor) {
     return layout;
 }
 
-// **Métodos Auxiliares** Chamada: Métodos de atribuição do INNER HTML
+// ***Metódos de atribuição do INNER HTML***
+// ***Metódos de atribuição do INNER HTML***
+function nomeCidades() {
+    var count = 0;
+    var index = 0;
+
+    while (quebrarTextoPorCidade().length > count) {
+        if (quebrarTextoPorCidade()[count].split("*").length > 1) {
+            cidades[index] = quebrarTextoPorCidade()[count].split("*")[1];
+            index++;
+        }
+        count++;
+    }
+    return montarLayout(cidades);
+}
+
+function conteudoRoteiroA() {
+    var count = 0;
+
+    while (quebrarTextoPorRoteiros("A+|").length > count) {
+        roteirosA[count] = quebrarTextoPorRoteiros("A+|")[count].split("<br>")[0];
+        count++;
+    }
+    return montarLayout(roteirosA);
+}
+
+function qtdDeLocaisRoteiroACadaCidade() {
+    var count = 0;
+    var proxIndex = 0;
+    var nomeCidadesRoteirosA = "";
+    var qtd = 0;
+
+    while (quebrarTextoPorRoteiros("A+|").length > count) {
+        do {
+            // Pega o nome de cada local de cada cidade
+            nomeCidadesRoteirosA = quebrarTextoPorRoteiros("A+|")[count].split("<br>")[1];
+            proxIndex = nomeCidadesRoteirosA.indexOf(";", proxIndex);
+            qtdCidadesRoteirosA[count] = qtd++;
+            proxIndex++;
+        } while (proxIndex != 0)
+
+        qtdCidadesRoteirosA[count] = qtd++;
+        count++;
+        qtd = 0;
+        proxIndex = 0;
+    }
+
+    //Criei somente para usar o montarLayout abaixo adicionando o sinal de +.
+    for (let index = 0; index < qtdCidadesRoteirosA.length; index++) {
+        qtdCidadesRoteirosA[index] += "+";
+
+    }
+
+    return montarLayout(qtdCidadesRoteirosA);
+}
+
+function pontosTuristicosCentroSP() {
+
+    var locaisFormatados = filtrarPorCidadeERegiao("*São+Paulo", "Região:+Centro")
+    var formatando = locaisFormatados.replaceAll("<br>", "");
+
+    for (let index = 0; index < formatando.split(";").length; index++) {
+        pontosTuristicosSP[index] = formatando.split(";")[index];
+    }
+
+    return montarLayout(pontosTuristicosSP);
+}
+
+function pontosTuristicosDowntownLA() {
+
+    var locaisFormatados = filtrarPorCidadeERegiao("*Las+Vegas*", "Região:+Downtown")
+    var formatando = locaisFormatados.replaceAll("<br>", "");
+    var contador = 0; 
+
+    for (let index = 0; index < formatando.split(";").length; index++) {
+        if(index > 0 && index < (formatando.split(";").length - 1))
+        {
+            pontosTuristicosDT[contador] = formatando.split(";")[index];
+            contador++;
+            
+        }
+    }
+
+    return montarLayout(pontosTuristicosDT);
+}
+
+
+// ***Métodos Auxiliares*** Chamados em: Métodos de atribuição do INNER HTML
+// ***Métodos Auxiliares*** Chamados em: Métodos de atribuição do INNER HTML
 function quebrarTextoPorCidade() {
     var totalCidadesEncontradas = formatarTexto(texto).split("->");
     return totalCidadesEncontradas;
@@ -77,7 +167,7 @@ function quebrarTextoPorPontoTuristico() {
     return totalPontosTuristico;
 }
 
-function filtrarPorCidadeERegiao(cidade, regiao){
+function filtrarPorCidadeERegiao(cidade, regiao) {
     var id = 0;
     var filtrarCidade = quebrarTextoPorCidade();
 
@@ -94,85 +184,4 @@ function filtrarPorCidadeERegiao(cidade, regiao){
     var locais = quebrarTextoPorCidade()[id].split(regiao)[1].substring(0, delimitador);
 
     return locais;
-}
-
-// **Metódos de atribuição do INNER HTML**
-function nomeCidades() {
-    var count = 0;
-    var index = 0;
-
-    while (quebrarTextoPorCidade().length > count) {
-        if (quebrarTextoPorCidade()[count].split("*").length > 1) {
-            cidades[index] = quebrarTextoPorCidade()[count].split("*")[1];
-            index++;
-        }
-        count++;
-    }
-    return montarLayout(cidades);
-}
-
-
-function conteudoRoteiroA() {
-    var count = 0;
-
-    while (quebrarTextoPorRoteiros("A+|").length > count) {
-        roteirosA[count] = quebrarTextoPorRoteiros("A+|")[count].split("<br>")[0];
-        count++;
-    }
-    return montarLayout(roteirosA);
-}
-
-
-function qtdDeLocaisRoteiroACadaCidade() {
-    var count = 0;
-    var proxIndex = 0;
-    var nomeCidadesRoteirosA = "";
-    var qtd = 0;
-
-    while (quebrarTextoPorRoteiros("A+|").length > count) {
-        do {
-            // Pega o nome de cada local de cada cidade
-            nomeCidadesRoteirosA = quebrarTextoPorRoteiros("A+|")[count].split("<br>")[1];
-            proxIndex = nomeCidadesRoteirosA.indexOf(";", proxIndex);
-            qtdCidadesRoteirosA[count] = qtd++;
-            proxIndex++;
-        } while (proxIndex != 0)
-
-        qtdCidadesRoteirosA[count] = qtd++;
-        count++;
-        qtd = 0;
-        proxIndex = 0;
-    }
-
-    //Criei somente para usar o montarLayout abaixo adicionando o sinal de +.
-    for (let index = 0; index < qtdCidadesRoteirosA.length; index++) {
-        qtdCidadesRoteirosA[index] += "+";
-
-    }
-    
-    return montarLayout(qtdCidadesRoteirosA);
-}
-
-
-
-function pontosTuristicosCentroSP() {
-    
-    var locaisFormatados = filtrarPorCidadeERegiao("*São+Paulo", "Região:+Centro")
-    var formatando = locaisFormatados.replaceAll("<br>", "");
-
-    for (let index = 0; index < formatando.split(";").length; index++) {
-        pontosTuristicosSP[index] = formatando.split(";")[index];
-    }
-    
-    return montarLayout(pontosTuristicosSP);
-}
-
-function pontosTuristicosDowntownLA() {
-    
-    var locaisFormatados = filtrarPorCidadeERegiao("*Las+Vegas*", "Região:+Downtown")
-    var formatando = locaisFormatados.replaceAll("<br>", "");
-    for (let index = 0; index < formatando.split(";").length; index++) {
-        pontosTuristicosDT[index] = formatando.split(";")[index];
-    }
-    return montarLayout(pontosTuristicosDT);
 }
