@@ -13,12 +13,17 @@ function mostrarNoDisplay() {
     document.querySelector("#cidades").innerHTML = nomeCidades().replaceAll("&", "<br><br>");
     document.querySelector("#roteirosA").innerHTML = conteudoRoteiroA().replaceAll("&", "<br><br>");
     document.querySelector("#qtdCidadesRoteirosA").innerHTML = qtdDeLocaisRoteiroACadaCidade().replaceAll("&", "<br><br>");
+    document.querySelector("#pontosTuristicosCentroSP").innerHTML = pontosTuristicosCentroSP().replaceAll("&", "<br><br>");
+    document.querySelector("#pontosTuristicosDowntownLA").innerHTML = pontosTuristicosDowntownLA().replaceAll("&", "<br><br>");
 }
 
 function resetarValores() {
     document.querySelector("#cidades").innerHTML = `Clicar no botão "Exibir Resolução"`;
     document.querySelector("#roteirosA").innerHTML = `Clicar no botão "Exibir Resolução"`;
     document.querySelector("#qtdCidadesRoteirosA").innerHTML = `Clicar no botão "Exibir Resolução"`;
+    document.querySelector("#pontosTuristicosCentroSP").innerHTML = `Clicar no botão "Exibir Resolução"`;
+    document.querySelector("#pontosTuristicosDowntownLA").innerHTML = `Clicar no botão "Exibir Resolução"`;
+
 }
 
 // **Formata o texto** - Chamada: Métodos Auxiliares
@@ -144,8 +149,7 @@ function qtdDeLocaisRoteiroACadaCidade() {
         qtdCidadesRoteirosA[index] += "+";
 
     }
-    pontosTuristicosCentroSP();
-    pontosTuristicosDowntownLA();
+    
     return montarLayout(qtdCidadesRoteirosA);
 }
 
@@ -154,26 +158,21 @@ function qtdDeLocaisRoteiroACadaCidade() {
 function pontosTuristicosCentroSP() {
     
     var locaisFormatados = filtrarPorCidadeERegiao("*São+Paulo", "Região:+Centro")
-    console.log(locaisFormatados.replaceAll("+", " "));
-    return "exibicao";
+    var formatando = locaisFormatados.replaceAll("<br>", "");
+
+    for (let index = 0; index < formatando.split(";").length; index++) {
+        pontosTuristicosSP[index] = formatando.split(";")[index];
+    }
+    
+    return montarLayout(pontosTuristicosSP);
 }
 
 function pontosTuristicosDowntownLA() {
     
     var locaisFormatados = filtrarPorCidadeERegiao("*Las+Vegas*", "Região:+Downtown")
-    console.log(locaisFormatados.replaceAll("+", " "));
-    return "exibicao";
+    var formatando = locaisFormatados.replaceAll("<br>", "");
+    for (let index = 0; index < formatando.split(";").length; index++) {
+        pontosTuristicosDT[index] = formatando.split(";")[index];
+    }
+    return montarLayout(pontosTuristicosDT);
 }
-
-// Para esses dois em questão eu recebo a região e a cidade
-// pontosTuristicosCentroSP ()
-// pontosTuristicosDowntownLA ()
-
-
-// Passa o valor do split para um outro método.
-//Possa usar o contains, "cortar" e usar o starwiths e por aí vai. 
-//quebrarTextoPorCidade usar a lógica do quebrarTextoPorRoteiros para o index 0 já ser a cidade. 
-//criar um método chamado quebrarTextoPorLocaisTurísticos e um outro como já criei para filtrar por Região e 
-// filtrar por cidade. 
-
-//Quando for publicar a Han300 tem que publicar a shell o da onda é shell 97. 
