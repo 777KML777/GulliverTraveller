@@ -10,6 +10,7 @@
     --background-color: #0E0E0E;
     --placeholder-color: #505050;
     --item-background-color: #202020;
+    --main-font: 'Poppins', sans-serif;
 }
 *{
     padding: 0;
@@ -19,6 +20,10 @@
     text-decoration: none;
     list-style-type: none;
     border-collapse: collapse;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
 ::-webkit-datetime-edit-month-field { background: none; }
