@@ -1,0 +1,10 @@
+Referencias para testes com Fontes:
+Type Scale
+Adobe Colors
+
+
+Tabela de Fontes
+-----------------------------------
+Nome | Fonte | Tamanho (em px) | Peso | Usabilidade
+--------------------------------------------
+Título: Inter : 32px : Bold : Titulo para Sections

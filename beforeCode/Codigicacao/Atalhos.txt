@@ -1,0 +1,49 @@
+Atalhos Úteis Para Agilizar o Trabalho\
+
+Para criar os próprios Atalhos
+Ctrl + K + S
+
+Reverter Ações:
+Ctrl + Z
+
+Abrir Terminal:
+Ctrl + '
+
+Esconde Explorer:
+Ctrl + b
+
+Seleciona o Explorer:
+Ctrl + Shift + e
+
+Levanta ou Abaixa a linha:
+Alt + Seta() 
+
+Levanta ou Abaixa Seletor:
+Ctrl + Alt + Seta()
+
+Clona linha atual para cima ou para baixo:
+Shift + Alt + Seta()
+
+Seleciona de cima para baixo as palavra iguais:
+Ctrl + D
+
+Seleciona todas as palavras iguais:
+Ctrl + Shift + L
+
+Seleciona a linha:
+Ctrl + L
+
+Pesquisa no Arquivo Atual:
+Ctrl + F
+
+Pesquisa dentro do bloco selecionado:
+Ctrl + F -> Alt + L
+
+Pesquisa no Projeto inteiro:
+Ctrl + Shift + H
+
+Substitui no arquivo atual:
+Ctrl + H
+
+Substitui no Projeto inteiro:
+Ctrl + Shift + H

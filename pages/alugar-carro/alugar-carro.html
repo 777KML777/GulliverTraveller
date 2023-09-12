@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Awsome Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
         integrity="sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- BootStrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -43,11 +42,11 @@
                             <div class="filtro-input-area-de-pesquisa">
                                 <div class="filtro-input-texto-grupo">
                                     <label for="">Valor Mínimo</label>
-                                    <input type="text" value="R$ 300" class="filtro-input-texto">
+                                    <input type="text" placeholder="R$ 300" class="filtro-input-texto">
                                 </div>
                                 <div class="filtro-input-texto-grupo">
                                     <label for="">Valor Máximo</label>
-                                    <input type="text" value="R$ 300" class="filtro-input-texto">
+                                    <input type="text" placeholder="R$ 300" class="filtro-input-texto">
                                 </div>
                             </div>
                         </details>
@@ -106,7 +105,7 @@
                             <input type="range" class="filtro-input-area-de-pesquisa">
                             <div class="filtro-input-texto-grupo">
                                 <label for="">Distância em Quilômetros</label>
-                                <input type="text" value="300Km" class="filtro-input-texto">
+                                <input type="text" placeholder="300Km" class="filtro-input-texto">
                             </div>
                         </details>
                     </li>
@@ -191,20 +190,20 @@
                         </details>
                     </li>
                     <li>
-                        <details open>
+                        <details>
                             <summary>Capacidades <img src="assets/images/chevron-cinza.svg"></summary>
                             <p class="filtro-input-titulo">Quantidade de Portas</p>
                             <div class="filtro-input-radio-grupo ">
                                 <div class="filtro-input-radio">
-                                    <input type="radio">
+                                    <input type="radio" name="quantidade-de-portas">
                                     <label>2</label><br>
                                 </div>
                                 <div class="filtro-input-radio">
-                                    <input type="radio">
+                                    <input type="radio" name="quantidade-de-portas">
                                     <label>4</label><br>
                                 </div>
                                 <div class="filtro-input-radio">
-                                    <input type="radio">
+                                    <input type="radio" name="quantidade-de-portas">
                                     <label>6</label><br>
                                 </div>
 
@@ -213,22 +212,22 @@
                             <div class="filtro-input-area-de-pesquisa">
                                 <div class="filtro-input-texto-grupo">
                                     <label for="">Grande</label>
-                                    <input type="text" value="2" class="filtro-input-texto">
+                                    <input type="text" placeholder="2" class="filtro-input-texto">
                                 </div>
                                 <div class="filtro-input-texto-grupo">
                                     <label for="">Pequena</label>
-                                    <input type="text" value="2" class="filtro-input-texto">
+                                    <input type="text" placeholder="2" class="filtro-input-texto">
                                 </div>
                             </div>
                             <p class="filtro-input-titulo">Capacidade de Passageiros</p>
                             <div class="filtro-input-area-de-pesquisa">
                                 <div class="filtro-input-texto-grupo">
                                     <label for="">Grande</label>
-                                    <input type="text" value="2" class="filtro-input-texto">
+                                    <input type="text" placeholder="2" class="filtro-input-texto">
                                 </div>
                                 <div class="filtro-input-texto-grupo">
                                     <label for="">Pequena</label>
-                                    <input type="text" value="2" class="filtro-input-texto">
+                                    <input type="text" placeholder="2" class="filtro-input-texto">
                                 </div>
                             </div>
                         </details>
@@ -287,32 +286,32 @@
                 <div class="form-main">
                     <div class="forms-input-grup">
                         <div class="input-local-grupo">
-                            <div class="input input-retira">
+                            <div class="input input-retira" onclick="toggleData()">
                                 <img src="assets/images/Carro.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form">
+                                <div class="input-form" data-input-local>
                                     <label for="">Local de Retira</label>
-                                    <input type="text" value="Belo Horizonte, MG">
+                                    <input type="text" placeholder="Belo Horizonte, MG">
                                 </div>
                             </div>
-                            <div class="input input-devolucao">
+                            <div class="input input-devolucao" onclick="toggleData()">
                                 <img src="assets/images/Carro.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form">
+                                <div class="input-form" data-input-local>
                                     <label for="">Local de Devolução</label>
-                                    <input type="text" value="Belo Horizonte, MG">
+                                    <input type="text" placeholder="Belo Horizonte, MG">
                                 </div>
                             </div>
                         </div>
                         <div class="input-data-grupo">
-                            <div class="input input-data">
+                            <div class="input input-data " onclick="toggleData()">
                                 <img src="assets/images/Calendario.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form input-form-data">
+                                <div class="input-form input-form-data" data-input-data>
                                     <label for="">Data da Retira</label>
-                                    <input type="datetime-local" value="Belo Horizonte, MG">
+                                    <input type="datetime-local" value="Belo Horizonte, MG"  >
                                 </div>
                             </div>
-                            <div class="input input-data">
+                            <div class="input input-data " onclick="toggleData()">
                                 <img src="assets/images/Calendario.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form input-form-data">
+                                <div class="input-form input-form-data" data-input-data>
                                     <label for="">Data da Devolução</label>
                                     <input type="datetime-local" value="Belo Horizonte, MG">
                                 </div>

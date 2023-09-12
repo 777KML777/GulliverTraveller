@@ -1,0 +1,10 @@
+Para melhor organização e padronização dos arquivos, cada página do site tera sua própria pasta contendo o arquivo principal HTML, este receberá o nome da página, uma pasta de assets que irá receber outras pastas como CSS, Images e Js.
+
+Exemplo de pasta:
+    alugar-carro↴
+            assets↴
+                →CSS↴
+                    alugar-carro.css
+                →Images
+                →Js↴
+                    main.js
