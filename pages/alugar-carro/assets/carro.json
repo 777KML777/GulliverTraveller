@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1, 
+        "nome": "BMW",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+
+    {
+        "id": 1, 
+        "nome": "Fiat Argo",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+
+    {
+        "id": 1, 
+        "nome": "Mercedez Benz",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+    {
+        "id": 1, 
+        "nome": "Porsche",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+    {
+        "id": 1, 
+        "nome": "Hummer H1",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+    {
+        "id": 1, 
+        "nome": "Fiat Uno Branco",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+    {
+        "id": 1, 
+        "nome": "Celta Preto",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+    {
+        "id": 1, 
+        "nome": "Ferrari",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    },
+    {
+        "id": 1, 
+        "nome": "Camaro",
+        "qtdPortas": 4,
+        "preço" : 300, 
+        "descricao" : [
+            "4 portas", 
+            "Automático", 
+            "Air Bag", 
+            "Direção Hidráulica", 
+            "Mala grande", 
+            "Mala pequena", 
+            "Trava Elétrica", 
+            "5 Passageiros" 
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "nome": "123Milhas",
+        "regiao": "MG",
+        "lat": -19,
+        "lon": -46, 
+        "cars": [
+            {
+                "carId" : 1
+            },
+            {
+                "carId" : 2
+            }
+        ]
+    },
+    {
+        "nome": "Kayak",
+        "regiao": "SP",
+        "lat": -19.9, 
+        "lon": -46.2
+    },
+    {
+        "nome": "Localiza",
+        "regiao": "MG",
+        "lat": -19.5, 
+        "lon": -45.9
+    },
+    {
+        "nome": "Movida",
+        "regiao": "MG",
+        "lat": -19.1,
+        "lon": -46.1
+    },
+    {
+        "nome": "RentCars",
+        "regiao": "SP",
+        "lat": -19.4,
+        "lon": -46.5
+    },
+    {
+        "nome": "Decolar",
+        "regiao": "SP",
+        "lat": -19.9,
+        "lon": -46.5
+    }
+]

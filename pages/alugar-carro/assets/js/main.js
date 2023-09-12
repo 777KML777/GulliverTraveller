@@ -10,7 +10,6 @@ function sideHide() {
     filtroBarra.style.display = 'none'
 }
 
-
 localForm = document.querySelectorAll('[data-input-local]')
 dataForm = document.querySelectorAll('[data-input-data]')
 
@@ -66,4 +65,22 @@ function toggleData() {
             dataForm[i].parentNode.parentNode.style.width = "100%"
         }
     }
+}
+
+// Parte da Api de Mapas
+let agencias = []
+const agenciasData = 'assets/data/agencia.json'
+const carrosData = 'assets/data/carro.json'
+
+repositorioAgencia()
+
+async function repositorioAgencia() {
+    const ags = await fetch(agenciasData)
+    agencias = await ags.json()
+
+    const car = await fetch(carrosData)
+    carros = await car.json()
+
+    exibirMarcadoresNoMapa(agencias);
+    criarListaCarro(carros)
 }
