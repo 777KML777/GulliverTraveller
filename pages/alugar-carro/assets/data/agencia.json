@@ -1,0 +1,38 @@
+[
+    {
+        "nome": "Localiza Meoo Aluguel de Carros",
+        "regiao": "SP",
+        "lat": -23.688705314532218, 
+        "lon": -46.70368016403139
+    },
+    {
+        "nome": "Movida Aluguel de Carros",
+        "regiao": "SP",
+        "lat": -23.667290855116907, 
+        "lon": -46.69202946940004
+    },
+    {
+        "nome": "Rentplan Serviços",
+        "regiao": "SP",
+        "lat": -23.644727161910644, 
+        "lon": -46.795823819395025
+    },
+    {
+        "nome": "Unidas Aluguel de Carros",
+        "regiao": "SP",
+        "lat": -23.626366013556307,
+        "lon": -46.7876760633178
+    },
+    {
+        "nome": "Movida Aluguel de Carros",
+        "regiao": "SP",
+        "lat": -23.617589639821425,
+        "lon":  -46.76331786814503
+    },
+    {
+        "nome": "Decolar",
+        "regiao": "SP",
+        "lat": -23.616788764725214,
+        "lon": -46.70081216834762
+    }
+]

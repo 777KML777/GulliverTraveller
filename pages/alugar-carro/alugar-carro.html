@@ -12,6 +12,14 @@
     <!-- BootStrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -336,108 +344,23 @@
                 </div>
             </form>
 
-            <ul class="lista">
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="card">
-                    <p class="preco"> R$ 300 </p>
-                    <div class="conteudo">
-                        <p class="titulo">BMW</p>
-                        <ul class="descricao">
-                            <li>4 portas</li>
-                            <li>Automático</li>
-                            <li>Airbag</li>
-                            <li>Dir. Hidráulica</li>
-                        </ul>
-                    </div>
-                </li>
+            <!-- Section Mapa  -->
+            <section class="mapa">
+                <div id="map"></div>
+            </section>
+
+            <ul id="lstCarros" class="lista">
 
             </ul>
         </div>
     </div>
 
 </body>
-    <script src="assets/js/main.js"></script>
+
+<script src="assets/js/exibirNaTela.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+
 </html>
