@@ -1,0 +1,8 @@
+As classes serão em descendência, ou seja, a classe irá comecar recebendo o nome da classe do bloco que esta pertence, depois sendo separado por um Underline(_) será escrita a classe atual.
+
+Exemplo:
+    Class=" classe-avo_classe-pai_classe-filha "
+
+Para utilizar classes globais, ou seja, aquelas que guardam recursos CSS que se repetem, apenas a mantenha separada da corrente principal de classes
+Exemplo: 
+    Class=" classe-global classe-avo_classe-pai_classe-filha "

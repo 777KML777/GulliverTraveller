@@ -1,0 +1,20 @@
+Referencias para testes com cores:
+Realtime Colors
+Adobe Colors
+
+
+Tabela de Cores
+-----------------------------------
+Nome | Código da Cor| Usabilidade
+-----------------------------------
+Primaria:
+Sombra-Primaria:
+Gradiente-Primario:
+Secundária:
+Sombra-Secundária:
+Accent:
+Background:
+Text:
+Texto-Escurecido:
+Error:
+Sucesso:
