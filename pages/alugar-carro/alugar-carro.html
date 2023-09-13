@@ -27,328 +27,366 @@
 
 <body>
     <div class="conteudos">
-        <div class="side" data-barra-de-filtros>
-            <div class="side-conteudo">
-                <div class="opcoes-lista">
-                    <button class="btn-baratos">
-                        <p class="btn-titulo">Mais Barato</p>
-                        <p>a partir de R$300</p>
-                    </button>
-                    <button class="btn-recomendados">
-                        <p class="btn-titulo">Recomendados</p>
-                        <p>Melhores Ofertas</p>
-                    </button>
+        <header>
+            <img src="./assets/images/Logo.png" alt="Logo">
+            <nav class="nav-bar">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Roteiros</a>
+                <a href="#" class="nav-link">Alugar Carro</a>
+                <a href="#" class="nav-link">Explorar</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="side" data-barra-de-filtros>
+                <div class="side-conteudo">
+                    <div class="opcoes-lista">
+                        <button class="btn-baratos">
+                            <p class="btn-titulo">Mais Barato</p>
+                            <p>a partir de R$300</p>
+                        </button>
+                        <button class="btn-recomendados">
+                            <p class="btn-titulo">Recomendados</p>
+                            <p>Melhores Ofertas</p>
+                        </button>
+                    </div>
+                    <ul class="lista-filtros">
+                        <li>
+                            <details>
+                                <summary>Controle de Preços <img src="assets/images/chevron-cinza.svg"></summary>
+                                <input type="range" class="filtro-input-area-de-pesquisa">
+                                <div class="filtro-input-area-de-pesquisa">
+                                    <div class="filtro-input-texto-grupo">
+                                        <label for="">Valor Mínimo</label>
+                                        <input type="text" placeholder="R$ 300" class="filtro-input-texto">
+                                    </div>
+                                    <div class="filtro-input-texto-grupo">
+                                        <label for="">Valor Máximo</label>
+                                        <input type="text" placeholder="R$ 300" class="filtro-input-texto">
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Modelo Do Veículo <img src="assets/images/chevron-cinza.svg"></summary>
+                                <div class="barra-de-pesquisa">
+                                    <input type="text" placeholder="Pesquisar">
+                                    <img src="assets/images/magnifying-glass-solid.svg" alt="">
+                                </div>
+                                <div class="filtro-input-checkbox-grupo ">
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Hatch(230)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Sedan(143)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Suv(90)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Picape(63)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Vans(50)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>GOL(293)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Uno(195)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Palio(184)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Fox(240)</label><br>
+                                    </div>
+
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Distância de Pesquisa <img src="assets/images/chevron-cinza.svg"></summary>
+                                <input type="range" class="filtro-input-area-de-pesquisa">
+                                <div class="filtro-input-texto-grupo">
+                                    <label for="">Distância em Quilômetros</label>
+                                    <input type="text" placeholder="300Km" class="filtro-input-texto">
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Opções Do Veículo <img src="assets/images/chevron-cinza.svg"></summary>
+                                <div class="barra-de-pesquisa">
+                                    <input type="text" placeholder="Pesquisar">
+                                    <img src="assets/images/magnifying-glass-solid.svg" alt="">
+                                </div>
+                                <div class="filtro-input-checkbox-grupo ">
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Automático</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Manual</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Air Bag</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Direção Hidráulica</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Ar-Condicionado</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>GOL(293)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Trava Elétrica</label><br>
+                                    </div>
+
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Agência <img src="assets/images/chevron-cinza.svg"></summary>
+                                <div class="barra-de-pesquisa">
+                                    <input type="text" placeholder="Pesquisar">
+                                    <img src="assets/images/magnifying-glass-solid.svg" alt="">
+                                </div>
+                                <div class="filtro-input-checkbox-grupo ">
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Localiza(420)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>RentCars(350)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>RentalCars(213)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Raja(185)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Kayak(245)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Movida(145)</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Unidas(90)</label><br>
+                                    </div>
+
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Capacidades <img src="assets/images/chevron-cinza.svg"></summary>
+                                <p class="filtro-input-titulo">Quantidade de Portas</p>
+                                <div class="filtro-input-radio-grupo ">
+                                    <div class="filtro-input-radio">
+                                        <input type="radio" name="quantidade-de-portas">
+                                        <label>2</label><br>
+                                    </div>
+                                    <div class="filtro-input-radio">
+                                        <input type="radio" name="quantidade-de-portas">
+                                        <label>4</label><br>
+                                    </div>
+                                    <div class="filtro-input-radio">
+                                        <input type="radio" name="quantidade-de-portas">
+                                        <label>6</label><br>
+                                    </div>
+
+                                </div>
+                                <p class="filtro-input-titulo">Capacidade de Malas</p>
+                                <div class="filtro-input-area-de-pesquisa">
+                                    <div class="filtro-input-texto-grupo">
+                                        <label for="">Grande</label>
+                                        <input type="text" placeholder="2" class="filtro-input-texto">
+                                    </div>
+                                    <div class="filtro-input-texto-grupo">
+                                        <label for="">Pequena</label>
+                                        <input type="text" placeholder="2" class="filtro-input-texto">
+                                    </div>
+                                </div>
+                                <p class="filtro-input-titulo">Capacidade de Passageiros</p>
+                                <div class="filtro-input-area-de-pesquisa">
+                                    <div class="filtro-input-texto-grupo">
+                                        <label for="">Grande</label>
+                                        <input type="text" placeholder="2" class="filtro-input-texto">
+                                    </div>
+                                    <div class="filtro-input-texto-grupo">
+                                        <label for="">Pequena</label>
+                                        <input type="text" placeholder="2" class="filtro-input-texto">
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Políticas <img src="assets/images/chevron-cinza.svg"></summary>
+                                <div class="barra-de-pesquisa">
+                                    <input type="text" placeholder="Pesquisar">
+                                    <img src="assets/images/magnifying-glass-solid.svg" alt="">
+                                </div>
+                                <div class="filtro-input-checkbox-grupo ">
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Cancelamento Grátis</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Política de Combustível Justa</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Quilometragem ilimitada</label><br>
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Pagamento <img src="assets/images/chevron-cinza.svg"></summary>
+                                <div class="barra-de-pesquisa">
+                                    <input type="text" placeholder="Pesquisar">
+                                    <img src="assets/images/magnifying-glass-solid.svg" alt="">
+                                </div>
+                                <div class="filtro-input-checkbox-grupo ">
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Pagar Agora</label><br>
+                                    </div>
+                                    <div class="filtro-input-checkbox">
+                                        <input type="checkbox">
+                                        <label>Pagar ao Retirar</label><br>
+                                    </div>
+                                </div>
+                            </details>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="lista-filtros">
-                    <li>
-                        <details>
-                            <summary>Controle de Preços <img src="assets/images/chevron-cinza.svg"></summary>
-                            <input type="range" class="filtro-input-area-de-pesquisa">
-                            <div class="filtro-input-area-de-pesquisa">
-                                <div class="filtro-input-texto-grupo">
-                                    <label for="">Valor Mínimo</label>
-                                    <input type="text" placeholder="R$ 300" class="filtro-input-texto">
-                                </div>
-                                <div class="filtro-input-texto-grupo">
-                                    <label for="">Valor Máximo</label>
-                                    <input type="text" placeholder="R$ 300" class="filtro-input-texto">
-                                </div>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Modelo Do Veículo <img src="assets/images/chevron-cinza.svg"></summary>
-                            <div class="barra-de-pesquisa">
-                                <input type="text" placeholder="Pesquisar">
-                                <img src="assets/images/magnifying-glass-solid.svg" alt="">
-                            </div>
-                            <div class="filtro-input-checkbox-grupo ">
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Hatch(230)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Sedan(143)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Suv(90)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Picape(63)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Vans(50)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>GOL(293)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Uno(195)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Palio(184)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Fox(240)</label><br>
-                                </div>
+                <div class="side-background" onclick="sideHide()" data-background-filtros>
 
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Distância de Pesquisa <img src="assets/images/chevron-cinza.svg"></summary>
-                            <input type="range" class="filtro-input-area-de-pesquisa">
-                            <div class="filtro-input-texto-grupo">
-                                <label for="">Distância em Quilômetros</label>
-                                <input type="text" placeholder="300Km" class="filtro-input-texto">
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Opções Do Veículo <img src="assets/images/chevron-cinza.svg"></summary>
-                            <div class="barra-de-pesquisa">
-                                <input type="text" placeholder="Pesquisar">
-                                <img src="assets/images/magnifying-glass-solid.svg" alt="">
-                            </div>
-                            <div class="filtro-input-checkbox-grupo ">
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Automático</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Manual</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Air Bag</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Direção Hidráulica</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Ar-Condicionado</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>GOL(293)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Trava Elétrica</label><br>
-                                </div>
+                </div>
 
+            </div>
+            <div class="main">
+                <form action="" class="forms">
+                    <div class="form-main">
+                        <div class="forms-input-grup">
+                            <div class="input-local-grupo">
+                                <div class="input input-retira" onclick="toggleData()">
+                                    <img src="assets/images/Carro.svg" alt="Icone de Carro" class="input-icon">
+                                    <div class="input-form" data-input-local>
+                                        <label for="">Local de Retira</label>
+                                        <input type="text" placeholder="Belo Horizonte, MG">
+                                    </div>
+                                </div>
+                                <div class="input input-devolucao" onclick="toggleData()">
+                                    <img src="assets/images/Carro.svg" alt="Icone de Carro" class="input-icon">
+                                    <div class="input-form" data-input-local>
+                                        <label for="">Local de Devolução</label>
+                                        <input type="text" placeholder="Belo Horizonte, MG">
+                                    </div>
+                                </div>
                             </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Agência <img src="assets/images/chevron-cinza.svg"></summary>
-                            <div class="barra-de-pesquisa">
-                                <input type="text" placeholder="Pesquisar">
-                                <img src="assets/images/magnifying-glass-solid.svg" alt="">
+                            <div class="input-data-grupo">
+                                <div class="input input-data " onclick="toggleData()">
+                                    <img src="assets/images/Calendario.svg" alt="Icone de Carro" class="input-icon">
+                                    <div class="input-form input-form-data" data-input-data>
+                                        <label for="">Data da Retira</label>
+                                        <input type="datetime-local" value="Belo Horizonte, MG">
+                                    </div>
+                                </div>
+                                <div class="input input-data " onclick="toggleData()">
+                                    <img src="assets/images/Calendario.svg" alt="Icone de Carro" class="input-icon">
+                                    <div class="input-form input-form-data" data-input-data>
+                                        <label for="">Data da Devolução</label>
+                                        <input type="datetime-local" value="Belo Horizonte, MG">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="filtro-input-checkbox-grupo ">
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Localiza(420)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>RentCars(350)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>RentalCars(213)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Raja(185)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Kayak(245)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Movida(145)</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Unidas(90)</label><br>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="devolver" id="">
+                        <label for="">Devolver em outro local</label>
+                    </div>
+                    <div class="filtros">
+                        <div class="filtro-btn" onclick="sideShow()" data-filtro-btn>
+                            <img src="assets/images/filtro.svg">
+                            <p>Filtros</p>
+                        </div>
+                        <div class="filtro-adicionado">
+                            <img src="assets/images/x.svg">
+                            <p>300Km</p>
+                        </div>
+                    </div>
+                </form>
 
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Capacidades <img src="assets/images/chevron-cinza.svg"></summary>
-                            <p class="filtro-input-titulo">Quantidade de Portas</p>
-                            <div class="filtro-input-radio-grupo ">
-                                <div class="filtro-input-radio">
-                                    <input type="radio" name="quantidade-de-portas">
-                                    <label>2</label><br>
-                                </div>
-                                <div class="filtro-input-radio">
-                                    <input type="radio" name="quantidade-de-portas">
-                                    <label>4</label><br>
-                                </div>
-                                <div class="filtro-input-radio">
-                                    <input type="radio" name="quantidade-de-portas">
-                                    <label>6</label><br>
-                                </div>
+                <!-- Section Mapa  -->
+                <div class="grupo-mapa">
+                    <h2>Resultados Encontrados</h2>
+                    <section class="mapa">
+                        <div id="map"></div>
+                    </section>
+                </div>
 
-                            </div>
-                            <p class="filtro-input-titulo">Capacidade de Malas</p>
-                            <div class="filtro-input-area-de-pesquisa">
-                                <div class="filtro-input-texto-grupo">
-                                    <label for="">Grande</label>
-                                    <input type="text" placeholder="2" class="filtro-input-texto">
-                                </div>
-                                <div class="filtro-input-texto-grupo">
-                                    <label for="">Pequena</label>
-                                    <input type="text" placeholder="2" class="filtro-input-texto">
-                                </div>
-                            </div>
-                            <p class="filtro-input-titulo">Capacidade de Passageiros</p>
-                            <div class="filtro-input-area-de-pesquisa">
-                                <div class="filtro-input-texto-grupo">
-                                    <label for="">Grande</label>
-                                    <input type="text" placeholder="2" class="filtro-input-texto">
-                                </div>
-                                <div class="filtro-input-texto-grupo">
-                                    <label for="">Pequena</label>
-                                    <input type="text" placeholder="2" class="filtro-input-texto">
-                                </div>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Políticas <img src="assets/images/chevron-cinza.svg"></summary>
-                            <div class="barra-de-pesquisa">
-                                <input type="text" placeholder="Pesquisar">
-                                <img src="assets/images/magnifying-glass-solid.svg" alt="">
-                            </div>
-                            <div class="filtro-input-checkbox-grupo ">
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Cancelamento Grátis</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Política de Combustível Justa</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Quilometragem ilimitada</label><br>
-                                </div>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Pagamento <img src="assets/images/chevron-cinza.svg"></summary>
-                            <div class="barra-de-pesquisa">
-                                <input type="text" placeholder="Pesquisar">
-                                <img src="assets/images/magnifying-glass-solid.svg" alt="">
-                            </div>
-                            <div class="filtro-input-checkbox-grupo ">
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Pagar Agora</label><br>
-                                </div>
-                                <div class="filtro-input-checkbox">
-                                    <input type="checkbox">
-                                    <label>Pagar ao Retirar</label><br>
-                                </div>
-                            </div>
-                        </details>
-                    </li>
+                <ul id="lstCarros" class="lista">
+
                 </ul>
             </div>
-            <div class="side-background" onclick="sideHide()" data-background-filtros>
-
+        </div>
+        <footer>
+            <div>
+                <img src="./assets/images/logo2.png" alt="logo">
+                <p>© Guliver Traveller</p>
             </div>
 
-        </div>
-        <div class="main">
-            <form action="" class="forms">
-                <div class="form-main">
-                    <div class="forms-input-grup">
-                        <div class="input-local-grupo">
-                            <div class="input input-retira" onclick="toggleData()">
-                                <img src="assets/images/Carro.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form" data-input-local>
-                                    <label for="">Local de Retira</label>
-                                    <input type="text" placeholder="Belo Horizonte, MG">
-                                </div>
-                            </div>
-                            <div class="input input-devolucao" onclick="toggleData()">
-                                <img src="assets/images/Carro.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form" data-input-local>
-                                    <label for="">Local de Devolução</label>
-                                    <input type="text" placeholder="Belo Horizonte, MG">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-data-grupo">
-                            <div class="input input-data " onclick="toggleData()">
-                                <img src="assets/images/Calendario.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form input-form-data" data-input-data>
-                                    <label for="">Data da Retira</label>
-                                    <input type="datetime-local" value="Belo Horizonte, MG">
-                                </div>
-                            </div>
-                            <div class="input input-data " onclick="toggleData()">
-                                <img src="assets/images/Calendario.svg" alt="Icone de Carro" class="input-icon">
-                                <div class="input-form input-form-data" data-input-data>
-                                    <label for="">Data da Devolução</label>
-                                    <input type="datetime-local" value="Belo Horizonte, MG">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="list">
+                <div>
+                    <p class="first">EXPLORAR</p>
+                    <p>Inspirações Para Viagem</p>
+                    <p>Destinos</p>
                 </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="devolver" id="">
-                    <label for="">Devolver em outro local</label>
+                <div>
+                    <p class="first">MEUS ROTEIROS</p>
+                    <p>Lista de Roteiros</p>
+                    <p>Roteiros Favoritos</p>
                 </div>
-                <div class="filtros">
-                    <div class="filtro-btn" onclick="sideShow()" data-filtro-btn>
-                        <img src="assets/images/filtro.svg">
-                        <p>Filtros</p>
-                    </div>
-                    <div class="filtro-adicionado">
-                        <img src="assets/images/x.svg">
-                        <p>300Km</p>
-                    </div>
+                <div>
+                    <p class="first">HOME</p>
+                    <p class="first">PERFIL</p>
                 </div>
-            </form>
-
-            <!-- Section Mapa  -->
-            <section class="mapa">
-                <div id="map"></div>
-            </section>
-
-            <ul id="lstCarros" class="lista">
-
-            </ul>
-        </div>
+            </div>
+        </footer>
     </div>
 
 </body>
