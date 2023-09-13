@@ -1,6 +1,6 @@
-# Usando a API Leaflet para Mapas Interativos
+# Explanação do uso da API
 
-A API Leaflet é uma biblioteca JavaScript popular para criação de mapas interativos em páginas da web. Ela é fácil de usar, personalizável e suporta uma variedade de recursos de mapas. Este guia irá ajudá-lo a começar a usar a API Leaflet e fornecer um exemplo de um recurso que você pode implementar.
+A API Leaflet é uma biblioteca JavaScript popular para criação de mapas interativos em páginas da web. Ela é fácil de usar, personalizável e suporta uma variedade de recursos de mapas.
 
 ## Começando
 
