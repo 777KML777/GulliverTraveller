@@ -2,7 +2,17 @@
 
 A API Leaflet é uma biblioteca JavaScript popular para criação de mapas interativos em páginas da web. Ela é fácil de usar, personalizável e suporta uma variedade de recursos de mapas.
 
-## Começando
+## Como e por que usamos ela ?
+
+Para o passo 1 no tutorial a seguir optamos por instalar a API via CDN é possível ver no nosso arquivo HTML. pages/alugar-carro/alugar-carro.html
+
+Para o passo 3 o arquivo exibirNaTela.js tem os códigos semelhantes ao do tutorial a abaixo. Adptamos para o nosso cenário. 
+
+Criamos objetos com localizações reais de locadora para poder marca-los no mapa. A criação dos objeto é possível ver na pasta pages/alugar-carro/assets/data
+
+Optamos por usar essa API para mostrar no mapa a localização dos endereços das locadoras que teremos na aplicação para a retirada e devolução do veículo. 
+
+## Explicação sobre a API
 
 Para começar a usar a API Leaflet, siga os seguintes passos:
 
