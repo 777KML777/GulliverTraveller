@@ -1,5 +1,5 @@
 /* Criando o mapa na tela */
-var map = L.map('map').setView([-23.554089836037775, -46.77735662393842], 12);
+var map = L.map('map').setView([-23.640089836037775, -46.74735662393842], 11);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 11,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -42,14 +42,12 @@ function criarListaCarro(carros) {
            </ul>
        </div>
    </li>`
-
-   
     }
 
 
     document.querySelector("#lstCarros").innerHTML = htmltext;
-    document.querySelector(".card").style.background = 'url(../alugar-carro/assets/images/hummer-h1.jpg)';
-    document.querySelector(".card").style.background_size = 'cover';
-
-
+    
+    let card = document.querySelector(".card");
+    card.style.backgroundColor = '#000';
+    card.style.backgroundImage = 'linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../alugar-carro/assets/images/hummer-h1.jpg)'
 }
